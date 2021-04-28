@@ -22,8 +22,8 @@ class Parent extends Component {
   render() {
     return (
       <div className="parent" style={{backgroundColor: this.state.color}}>
-        <Child color={this.state.childrenColor} handleColorChange={this.changeColor}/>
-        <Child color={this.state.childrenColor} handleColorChange={this.changeColor}/>
+        <Child color={this.state.childrenColor} changeColor={this.changeColor}/>
+        <Child color={this.state.childrenColor} changeColor={this.changeColor}/>
       </div>
     )
   }
